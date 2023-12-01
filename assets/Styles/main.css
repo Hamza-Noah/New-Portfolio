@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif !important;
+}
+
+.navbar {
+  position: relative;
+  z-index: 3;
+}
+
+.logo {
+  height: 30px;
+}
+
+.landing {
+  background-image: url("../Images/header-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin-top: -58px;
+}
+
+.landing .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.landing p:first-child {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.landing h1 {
+  font-size: 50px;
+}
+
+.landing p:last-child {
+  font-size: 20px;
+}
+
+.landing button {
+  border: solid white 2px;
+  background: transparent;
+  transition: all ease-in 0.2s;
+}
+
+.landing button:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.nav-link {
+  color: white;
+  font-size: 15px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #d35c72 !important;
+}
+
+.about .img {
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.about .about-info p:not(:first-child) {
+  font-size: 15px;
+}
+
+.about .about-info .social-icons {
+  & li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 2px #d4d4d4;
+    width: 40px;
+    height: 40px;
+    transition: all ease-in 0.2s;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      border-color: #d35c72;
+      color: #d35c72;
+    }
+  }
+}
+
+.our-services h4.line-bottom {
+  position: relative;
+}
+
+.our-services .service {
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.our-services h4.line-bottom:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #e65f78;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all ease-in 0.2s;
+}
+
+.our-services .service:hover h4.line-bottom:after {
+  width: 40px;
+}
